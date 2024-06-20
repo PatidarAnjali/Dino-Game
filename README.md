@@ -1,5 +1,5 @@
 # The Dino Game
-<img src="https://github.com/PatidarAnjali/Dino-Game/assets/101072121/0d2d9a05-cf4d-4119-b38a-acbcefa6e3b5" alt="Orange dino" width="200" style="float: left; margin-right: 10px;" />
+<img src="https://github.com/PatidarAnjali/Dino-Game/assets/101072121/0d2d9a05-cf4d-4119-b38a-acbcefa6e3b5" alt="Orange dino" width="100"" />
 Welcome to **The Dino Game**, a Java-based interactive game where you control a dinosaur to collect apples and avoid obstacles!
 
 ## Game Overview
