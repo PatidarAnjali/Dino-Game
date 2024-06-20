@@ -40,4 +40,6 @@ Contributions and feedback are welcome! If you have any suggestions or find any 
 - **Developer**: Anjali Patidar
 - **Graphics**: Canva + Google
 
+##
+
 Enjoy playing **The Dino Game**! If you encounter any problems or have suggestions for improvements, don't hesitate to reach out. Happy gaming! 🦕🍎
