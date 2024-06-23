@@ -11,20 +11,18 @@ public class Main extends JPanel implements ActionListener {
 	private static final int DELAY_FAST = 10;
 
 	Font font = new Font("Arial", Font.BOLD, 15);
-
 	// Boolean values for the instructions screen and the game
 	private boolean introScreen = true;
 	private boolean characterScreen = false;
 	private boolean gameScreen = false;
-
 	// Array to store backgrounds
 	private int currentBackgroundIndex = 0;
-	private String[] backgroundImages = { "background1.png", "background2.png", "background3.png", "background4.png" };
+	private String[] backgroundImages = { "assets/background1.png", "assets/background2.png", "assets/background3.png", "assets/background4.png" };
 
 	private int selectedDinoIndex = 0;
-	private String[] dinoImages = { "dino1.png", "dino2.png", "dino3.png", "dino4.png" };
-	private String[] flippedDinoImages = { "dino1flipped.png", "dino2flipped.png", "dino3flipped.png",
-			"dino4flipped.png" };
+	private String[] dinoImages = { "assets/dino1.png", "assets/dino2.png", "assets/dino3.png", "assets/dino4.png" };
+	private String[] flippedDinoImages = { "assets/dino1flipped.png", "assets/dino2flipped.png", "assets/dino3flipped.png",
+			"assets/dino4flipped.png" };
 
 	private Timer appleTimer, fastTimer, greenAppleTimer, commentTimer, shieldTimer; // Timers
 
@@ -371,14 +369,14 @@ public class Main extends JPanel implements ActionListener {
 		if (introScreen) {
 
 			// Instructions image
-			ImageIcon instructions = new ImageIcon("instructions.png");
+			ImageIcon instructions = new ImageIcon("assets/instructions.png");
 			Image insImage = instructions.getImage();
 			g.drawImage(insImage, 0, 0, getWidth(), getHeight(), null);
 
 		} else if (characterScreen) {
 
 			// Choose a character background image
-			ImageIcon instructions = new ImageIcon("chooseDinoBg.png");
+			ImageIcon instructions = new ImageIcon("assets/chooseDinoBg.png");
 			Image insImage = instructions.getImage();
 			g.drawImage(insImage, 0, 0, getWidth(), getHeight(), null);
 
@@ -398,38 +396,38 @@ public class Main extends JPanel implements ActionListener {
 			g.drawImage(bgImg, 0, 0, getWidth(), getHeight(), null);
 
 			// Dashed line image
-			ImageIcon dashed_Line = new ImageIcon("dashedLine.png");
+			ImageIcon dashed_Line = new ImageIcon("assets/dashedLine.png");
 			Image dashedLine = dashed_Line.getImage();
 			g.drawImage(dashedLine, 75, 385, 441, 20, null);
 
 			// Apple Image
-			ImageIcon apple = new ImageIcon("apple.png");
+			ImageIcon apple = new ImageIcon("assets/apple.png");
 			Image apple_1 = apple.getImage();
 			g.drawImage(apple_1, appleX, appleY, 50, 50, null);
 
 			// Green Apple Image
 			if (isGreenAppleVisible) { // Show only when it is supposed to be visible
-				ImageIcon green_1 = new ImageIcon("greenApple.png");
+				ImageIcon green_1 = new ImageIcon("assets/greenApple.png");
 				Image greenApple = green_1.getImage();
 				g.drawImage(greenApple, greenX, greenY, 60, 60, null);
 			}
 
 			// When shield icon is falling, draw the image
 			if (isShieldVisible) {
-				ImageIcon shieldIcon = new ImageIcon("shield.png");
+				ImageIcon shieldIcon = new ImageIcon("assets/shield.png");
 				Image shield = shieldIcon.getImage();
 				g.drawImage(shield, shieldX, shieldY, 45, 45, null);
 			}
 
 			// When the dino intersects with shield, draw the shield cover
 			if (shieldAroundDino == true) {
-				ImageIcon shielOndDino = new ImageIcon("shieldCovers.png");
+				ImageIcon shielOndDino = new ImageIcon("assets/shieldCovers.png");
 				Image shieldCovers = shielOndDino.getImage();
 				g.drawImage(shieldCovers, dinoX, 290, 150, 230, null);
 			}
 
 			// Obstacle Image - meteor
-			ImageIcon meteor_obs = new ImageIcon("obstacle.png");
+			ImageIcon meteor_obs = new ImageIcon("assets/obstacle.png");
 			Image meteor = meteor_obs.getImage();
 			g.drawImage(meteor, obstacleX, obstacleY, 65, 65, null);
 
@@ -660,7 +658,7 @@ public class Main extends JPanel implements ActionListener {
 		frame.setVisible(true);
 		frame.setLocationRelativeTo(null);
 		frame.setContentPane(new Main());
-		ImageIcon logo = new ImageIcon("logo.png");
+		ImageIcon logo = new ImageIcon("assets/logo.png");
 		frame.setIconImage(logo.getImage());
 	}
 }
