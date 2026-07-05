@@ -360,6 +360,9 @@ public class Main extends JPanel implements ActionListener {
 				repaint();
 			}
 		});
+
+		// Request focus after the component is realized so key events (e.g. Enter) are captured.
+		SwingUtilities.invokeLater(this::requestFocusInWindow);
 	}
 
 	public void paintComponent(Graphics g) {
@@ -655,9 +658,11 @@ public class Main extends JPanel implements ActionListener {
 		JFrame frame = new JFrame(" The Dino Game ");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setSize(WIDTH, HEIGHT);
-		frame.setVisible(true);
+		Main gamePanel = new Main();
+		frame.setContentPane(gamePanel);
 		frame.setLocationRelativeTo(null);
-		frame.setContentPane(new Main());
+		frame.setVisible(true);
+		SwingUtilities.invokeLater(gamePanel::requestFocusInWindow);
 		ImageIcon logo = new ImageIcon("assets/logo.png");
 		frame.setIconImage(logo.getImage());
 	}
