@@ -24,6 +24,10 @@ In this game, your goal is to control the dinosaur using the left and right arro
 <img src="https://github.com/PatidarAnjali/Dino-Game/assets/101072121/25b9e535-887e-48bc-9a16-5ba302f85a57" alt="Gameplay Screenshot" width="400" />
 <img src="https://github.com/PatidarAnjali/Dino-Game/assets/101072121/c4c873bf-634b-40ce-b565-c8cd45b92eed" alt="Gameplay Screenshot" width="400" />
 <img src="https://github.com/PatidarAnjali/Dino-Game/assets/101072121/7d92a379-95ae-41a9-b548-987da0ef1bf7" alt="Gameplay Screenshot" width="400" />
+<img src="https://github.com/user-attachments/assets/82b88415-d017-4925-9f21-ccec26b649f1" alt="Gameplay Screenshot" width="400" />
+<img src="https://github.com/user-attachments/assets/acc43e5b-3a90-4746-a470-f092eac22a42" alt="Gameplay Screenshot" width="400" />
+<img src="https://github.com/user-attachments/assets/7fc4fb87-3dc9-4883-bc82-d2f853dbe8f4" alt="Gameplay Screenshot" width="400" />
+
 
 ## Getting Started
 
